@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+button {
+    font-size: 25px;
+    font-family: 'battleText';
+    background-color:#3b5bc0 ;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+@font-face {
+    font-family: 'battleShip';
+    src: url('./fonts/Battleground.ttf');
+    font-weight: 900;
+  }
+
+@font-face {
+    font-family: 'battleText';
+    src: url('./fonts/MomcakeBold-WyonA.otf');
+    font-weight: 900;
+  } 
+header {
+    background-color: #101936;
+    font-family: 'battleShip';
+    border-bottom:4px solid #3b5bc0;
+    height: 10vh;
+    color: #92959A;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px #3b5bc0;
+}
+
+.contentPlace{
+height: 80vh;
+padding: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.h{
+    background-color: grey;
+}
+
+.s{
+    background-color: green;
+}
+.gameboardEnemy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 456px;
+    border: 3px solid #3b5bc0;
+    border-radius: 5px;
+    height: 456px;
+}
+
+.gameboardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 456px;
+    border: 3px solid #3b5bc0;
+    border-radius: 5px;
+    height: 456px;
+   
+
+}
+footer{
+    font-size: 30px;
+    font-family: 'battleShip';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:4px solid #3b5bc0;
+    height: 10vh;
+    color: #92959A;
+    box-shadow: 0px -5px 10px #3b5bc0;
+  
+}
+
+.box {
+    border: 1px solid #3b5bc0;
+    width: 50px;
+    width: 50px ;
+   
+}
+.startGame{
+    display: flex;
+    align-items: center;
+    font-family: 'battleText';
+    width: 80%;
+    margin:auto;
+    height: 60vh;
+    font-size: 20px;
+    
+}
+.startGame form{
+    align-items: center;
+    color:#3b5bc0; ;
+    display: flex;
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 2px solid #3b5bc0;
+    line-height: 30px;
+    justify-content: space-around;
+    border-radius: 10px;
+
+}
+.startGame input {
+    background-color: #92959A;
+    padding: 5px;
+    width: 40%;
+    border: 2px solid #3b5bc0 ;
+    border-radius: 5px;
+}
+.startGame button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color:#3b5bc0 ;
+    border: 0;
+    border-radius: 20px
+     }
+@media screen and (max-width: 1000px) {
+    .startGame form {
+        font-size: 10px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .startGame button {
+        width: 50%;
+        height: 30px;
+        margin-top: 5px;
+    }
+    .gameboardContainer, .gameboardEnemy {
+        width: 276px;
+        height: 280px;
+    }
+
+    .contentPlace {
+        flex-direction: column;
+        height: 100vh;
+        
+    }
+
+    .box {
+        border: 1px solid #3b5bc0;
+        width: 30px;
+        height: 30px ;
+       
+    }
+  }
+
+
+
+.hittedShip{
+    background-color: red;
+}
+.sunkShip {
+    background-color:rgb(65, 0, 0);
+
+}
+.vertical {
+    border-left: 4px solid red !important;
+    border-right: 4px solid red !important;
+}
+
+.horizontal {
+    border-top: 4px solid red !important;
+    border-bottom: 4px solid red !important;
+}
+.winBox {
+    display: flex;
+    color: #92959A;
+    font-size: 25px;
+    flex-direction: column;
+}
